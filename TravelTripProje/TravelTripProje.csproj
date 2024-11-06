@@ -128,10 +128,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411061952597_sutunkaldir.cs" />
+    <Compile Include="Migrations\202411061952597_sutunkaldir.Designer.cs">
+      <DependentUpon>202411061952597_sutunkaldir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411061955417_sutunekle.cs" />
+    <Compile Include="Migrations\202411061955417_sutunekle.Designer.cs">
+      <DependentUpon>202411061955417_sutunekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411061959167_sutunsil.cs" />
+    <Compile Include="Migrations\202411061959167_sutunsil.Designer.cs">
+      <DependentUpon>202411061959167_sutunsil.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
@@ -170,6 +183,25 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="web2\about.html" />
+    <Content Include="web2\contact.html" />
+    <Content Include="web2\css\bootstrap.css" />
+    <Content Include="web2\css\style.css" />
+    <Content Include="web2\images\avatar.png" />
+    <Content Include="web2\images\icon3.png" />
+    <Content Include="web2\images\logo.jpg" />
+    <Content Include="web2\images\man.jpg" />
+    <Content Include="web2\images\more.png" />
+    <Content Include="web2\images\post1.jpg" />
+    <Content Include="web2\images\post2.jpg" />
+    <Content Include="web2\images\post3.jpg" />
+    <Content Include="web2\images\search.png" />
+    <Content Include="web2\index.html" />
+    <Content Include="web2\js\easing.js" />
+    <Content Include="web2\js\jquery.min.js" />
+    <Content Include="web2\js\move-top.js" />
+    <Content Include="web2\single.html" />
+    <Content Include="web2\w3layouts-License.txt" />
     <Content Include="web\about.html" />
     <Content Include="web\contact.html" />
     <Content Include="web\css\slider.css" />
@@ -238,6 +270,7 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\About.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Blog\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -268,6 +301,17 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202411061952597_sutunkaldir.resx">
+      <DependentUpon>202411061952597_sutunkaldir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411061955417_sutunekle.resx">
+      <DependentUpon>202411061955417_sutunekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411061959167_sutunsil.resx">
+      <DependentUpon>202411061959167_sutunsil.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

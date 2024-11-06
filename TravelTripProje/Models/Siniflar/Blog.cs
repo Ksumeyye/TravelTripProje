@@ -10,8 +10,7 @@ namespace TravelTripProje.Models.Siniflar
     {
         [Key]
         public int ID { get; set; }
-        public int Baslik { get; set; }
-        public DateTime Tarih { get; set; }
+        public string Baslik {  get; set; }
         public string Aciklama { get; set; }
         public string BlogImage { get; set; }
         public ICollection<Yorumlar> Yorumlars { get; set; }//İnterface kümeleme. Bir blogun birden fazla yorumu olabilir.C# Interface, yapısı gereği diğer sınıflara yol gösterici,
