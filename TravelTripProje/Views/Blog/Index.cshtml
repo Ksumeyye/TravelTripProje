@@ -1,5 +1,4 @@
-﻿@using TravelTripProje.Models.Siniflar
-@model List<Blog>
+﻿@model TravelTripProje.Models.Siniflar.BlogYorum
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_MainLayout.cshtml";
@@ -38,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="col-md-8 single-main">
                 <div class="single-grid">
-                    @foreach (var b in Model)
+                    @foreach (var b in Model.Deger1)
                     {<br />
                         <a href="/Blog/BlogDetay/@b.ID">@b.Baslik</a> //Blog Detay Sayfasına yönlendirir.
                         <p>
@@ -54,12 +53,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="col-md-4 side-content">
                 <div class="recent">
                     <h3>Son Bloglar</h3>
+                    @foreach(var y in Model.Deger3)
+                    {
                     <ul>
-                        <li><a href="#">Aliquam tincidunt mauris</a></li>
-                        <li><a href="#">Vestibulum auctor dapibus  lipsum</a></li>
-                        <li><a href="#">Nunc dignissim risus consecu</a></li>
-                        <li><a href="#">Cras ornare tristiqu</a></li>
+                        <li><a href="/Blog/BlogDetay/@y.ID">@y.Baslik</a></li>
                     </ul>
+                    }
                 </div>
                 <div class="comments">
                     <h3>Son Yorumlar</h3>
