@@ -1,4 +1,5 @@
-﻿
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Blog>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_MainLayout.cshtml";
@@ -24,7 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <img src="~/web/images/glass.png" alt="">
                             </div>
                             <div class="grid1-desc">
-                                <p>Restaurants</p>
+                                <p>Restaurantlar</p>
                             </div>
                             <div class="clear"></div>
                         </div>
@@ -33,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <img src="~/web/images/flight.png" alt="">
                             </div>
                             <div class="grid1-desc">
-                                <p>Flights</p>
+                                <p>Uçuşlar</p>
                             </div>
                             <div class="clear"></div>
                         </div>
@@ -42,7 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <img src="~/web/images/group.png" alt="">
                             </div>
                             <div class="grid1-desc">
-                                <p>Things to do</p>
+                                <p>Aktiviteler</p>
                             </div>
                             <div class="clear"></div>
                         </div>
@@ -51,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <img src="~/web/images/key.png" alt="">
                             </div>
                             <div class="grid1-desc">
-                                <p>Vacation Rents</p>
+                                <p>Araba Kiralama</p>
                             </div>
                             <div class="clear"></div>
                         </div>
@@ -59,12 +60,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     </div>
                     <div class="header_bottom_right_images">
 
-                        <div class="slider">
+                        <div class="slider" style="width:650px;height:365px;">
                             <ul class="rslides" id="slider1">
-                                <li><img src="~/web/images/img1.jpg" alt=""></li>
-                                <li><img src="~/web/images/img2.jpg" alt=""></li>
+                               @foreach(var x in Model)
+                               {
+                                <li><img src="@x.BlogImage" alt=""></li>
+                               }
+                                @*<li><img src="~/web/images/img2.jpg" alt=""></li>
                                 <li><img src="~/web/images/img3.jpg" alt=""></li>
-                                <li><img src="~/web/images/img4.jpg" alt=""></li>
+                                <li><img src="~/web/images/img4.jpg" alt=""></li>*@
                             </ul>
                         </div>
                     </div>

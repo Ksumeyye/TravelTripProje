@@ -15,8 +15,10 @@ namespace TravelTripProje.Controllers
         public ActionResult Index()
         {
             by.Deger1=b.Blogs.ToList();
-            by.Deger3 = b.Blogs.Take(3).ToList();
             //var bloglar = b.Blogs.ToList();
+            /*by.Deger3 = b.Blogs.Take(3).ToList();*/ //Baştan sona doğru by.deger3teki değerleri getirir.
+            /*by.Deger3.Reverse();*/// Gelen değerlerde ters sıralama yapar
+            by.Deger3 = b.Blogs.Take(3).AsEnumerable().Reverse().ToList(); //AsEnumerable(), veri kaynağından almak istediğim bilgileri tam olarak belirtebilmem için kullandım.AsEnumerable() metodunu kullanarak LINQ to Entities sorgusunu bellek içi LINQ sorgusuna dönüştürdüm. Bu şekilde, daha sonra koleksiyon üzerinde ters sıralama işlemi gerçekleşir.
             return View(by);
         }
        
