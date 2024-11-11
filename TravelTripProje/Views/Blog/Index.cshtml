@@ -40,10 +40,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     @foreach (var b in Model.Deger1)
                     {<br />
                         <a href="/Blog/BlogDetay/@b.ID">@b.Baslik</a> //Blog Detay Sayfasına yönlendirir.
-                        <p>
-                            @b.Aciklama
-                        </p>
-                        <img src=@b.BlogImage alt="" />
+                <p>
+                    @b.Aciklama.Substring(0, Math.Min(300, b.Aciklama.Length)) <a href="/Blog/BlogDetay/@b.ID">Devamı İçin Tıklayınız.</a>
+                </p> @*Burada, Math.Min(200, @b.Aciklama.Length) kullanarak, Substring fonksiyonuna ya 200 ya da dizenin uzunluğunun en küçüğünü geçirebilirim. 
+                     Böylece dizenin uzunluğundan bağımsız olarak hata almıyorum. *@
+         
+                        <img src=@b.BlogImage alt="" height="400" width="200"/>
                         <br />
                     }
                 </div>
