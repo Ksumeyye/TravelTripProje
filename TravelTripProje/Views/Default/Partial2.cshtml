@@ -1,15 +1,17 @@
 ﻿@using TravelTripProje.Models.Siniflar
 @model List<Blog>
-    @foreach(var x in Model)
+<div class="con-bot">
+    @foreach (var x in Model)
     {
-<div class="right">
-    <div class="bot-left">
-        <img src="@x.BlogImage" alt="" width="300" height="200" />
-    </div>
-    <div class="left-text">
-        <h4>@x.Baslik</h4>
-        <p>@x.Aciklama.Substring(0,100)</p> @*Substring(0,80) Baştan 80 tane harfi gösterir.*@ 
-        <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Daha Fazlası>></span></a></p>
-    </div>
-</div>
+        <div class="right">
+            <div class="bot-left">
+                <img src="@x.BlogImage" alt="" style="border-radius:15px; width:100%; height:100%; object-fit:cover;" />  @*width="300" height="200*@
+            <div class="left-text">
+                <h4>@x.Baslik</h4>
+                <p>@x.Aciklama.Substring(0, 100)</p> @*Substring(0,80) Baştan 80 tane harfi gösterir.*@
+                <p><a href="/Blog/BlogDetay/@x.ID"><span class="read">Daha Fazlası>></span></a></p>
+            </div>
+            </div>
+       </div>
     }
+</div>
