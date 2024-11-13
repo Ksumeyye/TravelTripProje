@@ -1,0 +1,26 @@
+﻿@model TravelTripProje.Models.Siniflar.Blog
+@{
+    ViewBag.Title = "BlogGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Blog Güncelleme Sayfası</h2>
+<br />
+@using (Html.BeginForm("BlogGuncelle", "Admin", FormMethod.Post)) //BeginForm Ne Zaman Çalışacak? BlogGetri ActionResult'ı Devreye girdiğinde, Yazılan bu blogguncelle nerede? Admin Controllerda, Nezaman çalışacak? FormMethod.Post Yani sayfa post edildiğinde gönderildiğinde.
+{
+    <label>Blog ID</label>
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly="readonly"})
+    <br />
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", @placeholder = "Başlık Yazınız." })
+    <br />
+    <label>Blog Resim</label>
+    @*<img src="@x.BlogImage" alt="" style="border-radius:15px; width:100%; height:100%; object-fit:cover;" />*@
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control", @placeholder = "Blog Resminin URL'sini Yazınız." })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextAreaFor(x => x.Aciklama,15,1, new { @class = "form-control", @placeholder = "Bloğunuzu Açıklayınız." }) //15 satır sayısı 1 sütun sayısı
+    <br />
+    <button class="btn btn-outline-success"> Güncelle</button>
+}
+

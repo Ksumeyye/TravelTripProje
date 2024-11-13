@@ -29,6 +29,18 @@ namespace TravelTripProje.Controllers
             by.Deger2 =b.Yorumlars.Where(x => x.ID == id).ToList();
             return View(by);
         }
-
+        [HttpGet]
+        public PartialViewResult YorumYap(int id)
+        {
+            ViewBag.deger = id;
+            return PartialView();
+        }
+        [HttpPost]
+        public PartialViewResult YorumYap(Yorumlar y)
+        {
+            b.Yorumlars.Add(y);
+            b.SaveChanges();
+            return PartialView("Index");
+        }
     }
 }

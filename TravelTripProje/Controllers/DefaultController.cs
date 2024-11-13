@@ -23,7 +23,7 @@ namespace TravelTripProje.Controllers
         }
         public PartialViewResult Partial1()
         {
-            var degerler=c.Blogs.OrderByDescending(x=>x.ID).Take(2).ToList(); //OrderByDescending().Take(2) En Son Eklenen 2 Değeri Getirir.
+            var degerler=c.Blogs.OrderByDescending(x=>x.ID).Take(2).ToList(); //OrderByDescending().Take(2) Z'den A'ya En Büyük 2 Değeri Getirir.
             return PartialView(degerler);
         }
         public PartialViewResult Partial2()
@@ -33,12 +33,17 @@ namespace TravelTripProje.Controllers
         }
         public PartialViewResult Partial3()
         { 
-            var deger = c.Blogs.OrderByDescending(x=>x.ID).Take(10).ToList();
+            var deger = c.Blogs.OrderByDescending(x=>x.ID).Take(10).ToList(); // 10 Blogu Getirir.
             return PartialView(deger);
         }
         public PartialViewResult Partial4()
         {
             var deger = c.Blogs.OrderByDescending(x=>x.ID).Take(3).ToList(); //Take() İstenilen sayıda değeri almaya yarar.
+            return PartialView(deger);
+        }
+        public PartialViewResult Partial5()
+        {
+            var deger = c.Blogs.Take(3).ToList();
             return PartialView(deger);
         }
     }

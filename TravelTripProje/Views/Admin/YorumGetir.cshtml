@@ -1,0 +1,27 @@
+﻿@model TravelTripProje.Models.Siniflar.Yorumlar
+@{
+    ViewBag.Title = "YorumGetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yorum Güncelleme Sayfası</h2>
+<br />
+@using (Html.BeginForm("YorumGuncelle", "Admin", FormMethod.Post)) //BeginForm Ne Zaman Çalışacak? YorumGetiri ActionResult'ı Devreye girdiğinde, Yazılan bu yorumguncelle nerede? Admin Controllerda, Nezaman çalışacak? FormMethod.Post Yani sayfa post edildiğinde gönderildiğinde.
+{
+    <label>Yorum ID</label>
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    <label>Kullanıcı Adı</label>
+    @Html.TextBoxFor(x => x.KullaniciAdi, new { @class = "form-control" })
+    <br />
+    <label>Mail</label>
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control"})
+    <br />
+    <label>Yorum</label>
+    @Html.TextAreaFor(x => x.Yorum, new { @class = "form-control"})
+    <br />
+    <button class="btn btn-outline-success"> Güncelle</button>
+}
+
+
+
