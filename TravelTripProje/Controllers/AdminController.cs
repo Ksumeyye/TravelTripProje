@@ -14,6 +14,7 @@ namespace TravelTripProje.Controllers
     {
         // GET: Admin
         TravelTripProje.Models.Siniflar.Context c = new TravelTripProje.Models.Siniflar.Context();
+        [Authorize]
         public ActionResult Index(int sayfa = 1)
         {
             var degerler = c.Blogs.ToList().ToPagedList(sayfa, 4); //PagedList, istenilen sayıda veriyi listeler.
