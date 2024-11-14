@@ -16,6 +16,21 @@ namespace TravelTripProje.Controllers
             var degerler=c.Kamps.ToList();
             return View(degerler);
         }
+        public ActionResult KampDetay()
+        {
+            var deger = c.Kamps.ToList();
+            return View(deger);
+        }
+        public ActionResult KoyDetay()
+        {
+            var koyd = c.Koylers.ToList();
+            return View(koyd);
+        }
+        public ActionResult YemekDetay()
+        {
+            var yemekd = c.Yemeks.ToList();
+            return View(yemekd);
+        }
         public PartialViewResult KampPartial1()
         {
             var degerler = c.Kamps.OrderByDescending(x => x.ID).Take(8).ToList(); //OrderByDescending().Take(2) Z'den A'ya En Büyük 2 Değeri Getirir.

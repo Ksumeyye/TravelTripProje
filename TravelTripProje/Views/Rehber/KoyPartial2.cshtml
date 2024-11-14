@@ -1,17 +1,18 @@
 ﻿@using TravelTripProje.Models.Siniflar
 @model List<Koyler>
 <div class="desti-middle">
-    <h4>Sahil Tatil Köyleri</h4>
-    @foreach(var x in Model)
+    <h4>En Beğenilen Sahil Tatil Köyleri</h4>
+    @foreach (var x in Model)
     {
-    <div class="box-left">
-        <div class="bot-img">
-            <img src="@x.KoyImage" alt="" style="border-radius:15px; width:120px; height:75px; object-fit:cover; " />
+        <div class="box-left">
+            <div class="bot-img">
+                <img src="@x.KoyImage" alt="" style="border-radius:15px; width:120px; height:75px; object-fit:cover; " />
+            </div>
+            <div class="bot-desc">
+                <p>@x.Aciklama.Substring(0, 110) ...</p>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="bot-desc">
-            <p>@x.Aciklama.Substring(0,110) ...</p>
-        </div>
-        <div class="clear"></div>
-    </div>
     }
+    <a href="/Rehber/KoyDetay/" class="link1">Daha Fazla Sahil Tatil Köyleri >>></a>
 </div>

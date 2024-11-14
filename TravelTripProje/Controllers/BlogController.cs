@@ -15,6 +15,7 @@ namespace TravelTripProje.Controllers
         public ActionResult Index()
         {
             by.Deger1=b.Blogs.ToList();
+            by.Deger2 = b.Yorumlars.OrderByDescending(x => x.ID).Take(3).ToList();
             //var bloglar = b.Blogs.ToList();
             /*by.Deger3 = b.Blogs.Take(3).ToList();*/ //Baştan sona doğru by.deger3teki değerleri getirir.
             /*by.Deger3.Reverse();*/// Gelen değerlerde ters sıralama yapar
@@ -25,7 +26,8 @@ namespace TravelTripProje.Controllers
         public ActionResult BlogDetay(int? id)
         {
             //var blogbul = b.Blogs.Where(x => x.ID == id).ToList();
-            by.Deger1=b.Blogs.Where(x=>x.ID==id).ToList();
+            by.Deger1 = b.Blogs.Where(x => x.ID == id).ToList();
+            //by.Deger1 = b.Blogs.Take(3).ToList();
             by.Deger2 =b.Yorumlars.Where(x => x.ID == id).ToList();
             return View(by);
         }
