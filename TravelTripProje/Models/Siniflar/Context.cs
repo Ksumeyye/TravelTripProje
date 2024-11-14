@@ -15,5 +15,8 @@ namespace TravelTripProje.Models.Siniflar
         public DbSet<Hakkimizda> Hakkimizdas { get; set; }
         public DbSet<iletisim> iletisims { get; set; }
         public DbSet<Yorumlar> Yorumlars { get; set; }
+        public DbSet<Koyler> Koylers { get; set; }
+        public DbSet<Yemek> Yemeks { get; set; }
+        public DbSet<Kamp> Kamps { get; set; }
     }
 }

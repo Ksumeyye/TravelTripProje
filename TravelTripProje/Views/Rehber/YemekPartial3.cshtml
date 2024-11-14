@@ -1,0 +1,18 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Yemek>
+<div class="desti-right">
+    <h4>En Tercih Edilen Tarihi Yemekler</h4>
+    <p>Hem havam değişsin hem de gurme rotalar keşfedeyim.” diyorsan, işte karşında aradığın lezzetler! Şimdi, özel lezzetleriyle dünyanın dört bir yanında merak edilen en meşhur Türk yemeklerini görme vakti!</p>
+    @foreach(var x in Model)
+    {
+<div class="box-left">
+    <div class="bot-img">
+        <img src="@x.YemekImage" alt="" style="border-radius:15px; width:120px; height:75px; object-fit:cover; " />
+    </div>
+    <div class="bot-desc">
+        <p>@x.Aciklama.Substring(0, 109) ...</p>
+    </div>
+    <div class="clear"></div>
+</div>
+    }
+</div>

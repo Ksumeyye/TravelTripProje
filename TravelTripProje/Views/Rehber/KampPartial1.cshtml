@@ -1,0 +1,13 @@
+﻿@using TravelTripProje.Models.Siniflar
+@model List<Kamp>
+<div class="padding">
+    <h4>En Popüler Kamp Alanları</h4>
+    @{int i=0;}
+    @foreach(var x in Model)
+    {
+    <ul class="list list-pad">
+        <li class="list-bg"><span>@{i++; @i;}</span><a href="/Rehber/KampPartial1/@x.ID">@x.KampAdi</a></li>
+    </ul>
+    }
+    <a href="/Rehber/Index/" class="link1">Daha Fazla Kamp Alanı >>></a>
+</div>

@@ -4,7 +4,7 @@
     @foreach(var x in Model)
     {
     <div class="bot-img">
-        <img src="@x.BlogImage" alt="" style="width:120px; height:75px;"/> 
+        <img src="@x.BlogImage" alt="" style="border-radius:15px; width:120px; height:75px; object-fit:cover; " /> @*style="width:120px; height:75px;*@
     </div>
     <div class="bot-desc1">
         <p>@x.Aciklama.Substring(0,75) </p><h1><a href="/Blog/BlogDetay/@x.ID">>>></a></h1>

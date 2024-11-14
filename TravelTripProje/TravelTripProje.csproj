@@ -139,6 +139,8 @@
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\GirisYapController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\iletisimController.cs" />
+    <Compile Include="Controllers\RehberController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,6 +156,22 @@
     <Compile Include="Migrations\202411061959167_sutunsil.Designer.cs">
       <DependentUpon>202411061959167_sutunsil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202411140716260_initial.cs" />
+    <Compile Include="Migrations\202411140716260_initial.Designer.cs">
+      <DependentUpon>202411140716260_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411140724585_CreateKoylersTable.cs" />
+    <Compile Include="Migrations\202411140724585_CreateKoylersTable.Designer.cs">
+      <DependentUpon>202411140724585_CreateKoylersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411140730111_CreateYemeksTable.cs" />
+    <Compile Include="Migrations\202411140730111_CreateYemeksTable.Designer.cs">
+      <DependentUpon>202411140730111_CreateYemeksTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202411140734179_CreateKampsTable.cs" />
+    <Compile Include="Migrations\202411140734179_CreateKampsTable.Designer.cs">
+      <DependentUpon>202411140734179_CreateKampsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Siniflar\Admin.cs" />
     <Compile Include="Models\Siniflar\AdresBlog.cs" />
@@ -163,6 +181,9 @@
     <Compile Include="Models\Siniflar\Context.cs" />
     <Compile Include="Models\Siniflar\Hakkimizda.cs" />
     <Compile Include="Models\Siniflar\iletisim.cs" />
+    <Compile Include="Models\Siniflar\Kamp.cs" />
+    <Compile Include="Models\Siniflar\Koyler.cs" />
+    <Compile Include="Models\Siniflar\Yemek.cs" />
     <Compile Include="Models\Siniflar\Yorumlar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -251,9 +272,12 @@
     <Content Include="web\images\pic7.jpg" />
     <Content Include="web\images\pic8.jpg" />
     <Content Include="web\images\pic9.jpg" />
+    <Content Include="web\images\rehber.jpeg" />
     <Content Include="web\images\TatilSeyahatB.png" />
     <Content Include="web\images\TatilSeyahatP.png" />
     <Content Include="web\images\Turkiye-turizm-1.jpg" />
+    <Content Include="web\images\Turkiye.jpg" />
+    <Content Include="web\images\turkiyetatil.jpg" />
     <Content Include="web\index.html" />
     <Content Include="web\js\jquery.min.js" />
     <Content Include="web\js\responsiveslides.min.js" />
@@ -280,9 +304,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\About.cshtml" />
@@ -304,6 +325,12 @@
     <Content Include="weblogin Tema\fonts\Asap-Regular.ttf" />
     <Content Include="weblogin Tema\fonts\Audiowide-Regular.ttf" />
     <Content Include="Views\GirisYap\Login.cshtml" />
+    <Content Include="Views\Rehber\Index.cshtml" />
+    <Content Include="Views\iletisim\Index.cshtml" />
+    <Content Include="Views\Rehber\KampPartial1.cshtml" />
+    <Content Include="Views\Rehber\KoyPartial2.cshtml" />
+    <Content Include="Views\Rehber\YemekPartial3.cshtml" />
+    <Content Include="Views\iletisim\mesajGonder.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -344,6 +371,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202411061959167_sutunsil.resx">
       <DependentUpon>202411061959167_sutunsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411140716260_initial.resx">
+      <DependentUpon>202411140716260_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411140724585_CreateKoylersTable.resx">
+      <DependentUpon>202411140724585_CreateKoylersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411140730111_CreateYemeksTable.resx">
+      <DependentUpon>202411140730111_CreateYemeksTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202411140734179_CreateKampsTable.resx">
+      <DependentUpon>202411140734179_CreateKampsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

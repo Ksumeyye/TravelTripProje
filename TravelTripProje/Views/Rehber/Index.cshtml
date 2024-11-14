@@ -1,15 +1,4 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
     <title>TatilSeyahat</title>
@@ -19,21 +8,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="~/web/js/jquery.min.js"></script>
-    <script src="~/web/js/responsiveslides.min.js"></script>
-
-    <script>
-        // You can also use "$(window).load(function() {"
-        $(function () {
-            // Slideshow 1
-            $("#slider1").responsiveSlides({
-                auto: true,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="header">
@@ -44,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <img src="~/web/images/contact.png" alt="">
                 </div>
                 <div class="grid1-l-desc">
-                    <p>Whatsapp : +90 (555) 540 50 50</p>
+                    <p> Whatsapp: +90 (555) 540 50 50</p>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -64,14 +38,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <li><a href="#">Tarihi Yöresel Yemekler</a></li>
                     </ul>
                 </li>
-                <li><a class="hsubs" href="/Blog/Index/">Bloğum</a></li>
+                @*<li><a class="hsubs" href="destinations.html">Free Travel Guides</a></li>*@
+                <li><a href="/Blog/Index/">Bloğum</a></li>
                 <li><a href="/iletisim/Index/">İletişim</a></li>
             </ul>
         </div>
     </div>
-
-    <div class"content">
-        @RenderBody()
+    <div class="content">
+        <div class="wrap">
+            <div class="about">
+                <h3>Rehber</h3>
+                <img src="~/web/images/turkiyetatil.jpg" alt="" style="border-radius:15px; width:1000px; height:450px; object-fit:cover;"/>
+            </div>
+            <div class="grids">
+                <div class="box1">
+                    @Html.Action("KampPartial1","Rehber")
+                    @Html.Action("KoyPartial2","Rehber")
+                    @Html.Action("YemekPartial3","Rehber")
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
     </div>
     <div class="footer-bottom">
         <div class="wrap">
