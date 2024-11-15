@@ -24,7 +24,9 @@
         <td>@x.Mail</td>
         <td>@x.Yorum</td>
         <td>@x.Blog.Baslik</td>
-        <td><a href="/Admin/YorumSil/@x.ID" class="btn btn-danger">Sil</a></td>
+        <td><a href="/Admin/YorumSil/@x.ID" class="btn btn-danger" onclick="return confirm('Bu projeyi silmek istediğinize emin misiniz?');">
+    <i class="fas fa-trash"></i> Sil
+</a></td>
         <td><a href="/Admin/YorumGetir/@x.ID" class="btn btn-warning">Güncelle</a></td>
     </tr>
     }

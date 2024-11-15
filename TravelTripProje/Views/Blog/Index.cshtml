@@ -37,23 +37,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="col-md-8 single-main">
                 <div class="single-grid">
-                    @foreach (var b in Model.Deger1)
-                    {<br />
-                        <a href="/Blog/BlogDetay/@b.ID">@b.Baslik</a> //Blog Detay Sayfasına yönlendirir.
-                <p>
-                    @b.Aciklama.Substring(0, Math.Min(300, b.Aciklama.Length)) <a href="/Blog/BlogDetay/@b.ID">Devamı İçin Tıklayınız.</a>
-                </p> @*Burada, Math.Min(200, @b.Aciklama.Length) kullanarak, Substring fonksiyonuna ya 200 ya da dizenin uzunluğunun en küçüğünü geçirebilirim. 
-                     Böylece dizenin uzunluğundan bağımsız olarak hata almıyorum. *@
-         
-                        <img src=@b.BlogImage alt="" style=" border-radius:15px; width:100%; height:100%; object-fit:cover; margin-bottom:20px"/> @*height = "400" width = "200"*@
+                        @foreach (var b in Model.Deger1)
+                        {
+                            <br />
+                            <a href="/Blog/BlogDetay/@b.ID">@b.Baslik</a> //Blog Detay Sayfasına yönlendirir.
+                            <p>
+                                @b.Aciklama.Substring(0, Math.Min(300, b.Aciklama.Length)) <a href="/Blog/BlogDetay/@b.ID">Devamı İçin Tıklayınız.</a>
+                            </p> @*Burada, Math.Min(200, @b.Aciklama.Length) kullanarak, Substring fonksiyonuna ya 200 ya da dizenin uzunluğunun en küçüğünü geçirebilirim.
+                Böylece dizenin uzunluğundan bağımsız olarak hata almıyorum. *@
 
-                    }
+                            <img src=@b.BlogImage alt="" style=" border-radius:15px; width:100%; height:100%; object-fit:cover; margin-bottom:20px" /> @*height = "400" width = "200"*@
+
+                        }
                 </div>
             </div>
             <div class="col-md-4 side-content">
                 <div class="recent">
                     <h3>Son Bloglar</h3>
-                    @foreach(var y in Model.Deger3)
+                    @foreach (var y in Model.Deger3)
                     {
                     <ul>
                         <li><a href="/Blog/BlogDetay/@y.ID">@y.Baslik</a></li>

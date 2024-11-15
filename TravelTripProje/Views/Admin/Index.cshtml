@@ -21,8 +21,12 @@
     <tr>
         <td><b>@x.ID</b></td>
         <td>@x.Baslik</td>
-        <td><a href="/Admin/BlogSil/@x.ID" class="btn btn-danger">Sil</a></td>
-        <td><a href="/Admin/BlogGetir/@x.ID" class="btn btn-warning">Güncelle</a></td>
+        <td><a href="/Admin/BlogSil/@x.ID" class="btn btn-danger" onclick="return confirm('Bu projeyi silmek istediğinize emin misiniz?');">
+                        <i class="fas fa-trash"></i> Sil</a>
+        </td>
+        <td>
+        <a href="/Admin/BlogGetir/@x.ID" class="btn btn-warning"> <i class="fas fa-edit"></i>Güncelle</a>
+        </td>
     </tr>
     }
 </table>
