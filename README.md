@@ -1,5 +1,5 @@
 # MVC 5 İLE TATİL & SEYAHAT BLOG SİTESİ PROJESİ <br/>
-Blogu, Yorum bilgileri, Blog bilgileri, ve Kullanıcı Yöneticisinin tam yetkili olduğu bu projemde;<br/>
+Blogu, Yorum bilgileri, Blog bilgileri, ve Kullanıcı Yöneticisinin tam yetkili olduğu bu projemde; <br/>
 Admin tarafında Yeni Blog Ekleme, Blog, Yorum ve İletişim Mesajı Silme,Blog, Yorum için Güncelleme gerçekleştirebildiğimiz (CRUD İşlemleri) mevcuttur.<br/>
 
 UI Tarafında Bloglara yorum yapabilme, İletişim kısmından admine mesaj gönderme, rehber kısmında açılır pencere ile sahil tatil köyleri, <br/>
@@ -11,6 +11,7 @@ HttpGet ve HttpPost,<br/>
 Code First,<br/>
 ORM aracı olarak Entity Framework <br/>
 MSSQL Server <br/>
+LogOut (Çıkış İşlemi) <br/>
 Authorization (Yetki Verme) gibi bir çok teknoloji mevcuttur.<br/>
 
 #Giriş Sayfası<br/>
