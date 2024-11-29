@@ -15,9 +15,11 @@ LogOut (Çıkış İşlemi) <br/>
 Authorization (Yetki Verme) gibi bir çok teknoloji mevcuttur.<br/>
 
 #Giriş Sayfası<br/>
+
 ![AdminGiris1](https://github.com/user-attachments/assets/1613a0a0-cd68-451c-b789-f63c8edc7f45) <br/>
 
 #UI Tarafı<br/>
+
 ![UI-1](https://github.com/user-attachments/assets/dc7f572c-c59d-4759-a371-b0058eeab23b) <br/>
 ![UI-2](https://github.com/user-attachments/assets/1af59682-bdb5-4b8b-9ef6-ac6491b98e0b) <br/>
 ![UI-3](https://github.com/user-attachments/assets/2e279063-79cd-4f7e-9f6b-d8c18582d64e) <br/>
@@ -31,6 +33,7 @@ Authorization (Yetki Verme) gibi bir çok teknoloji mevcuttur.<br/>
 ![UI-11](https://github.com/user-attachments/assets/9febaae3-6057-4be8-be89-45ca59dc82a5) <br/>
 
 #Admin Tarafı <br/>
+
 ![Admin2](https://github.com/user-attachments/assets/5fe7aca0-e17f-4aef-b9c2-e3d236d16e1b) <br/>
 ![Admin3](https://github.com/user-attachments/assets/13229d1e-92f3-43a7-b1ec-1d85ca4c86dd) <br/>
 ![Admin4](https://github.com/user-attachments/assets/d8b812ce-7f5b-4f35-a647-e6ffebf9135c) <br/>
