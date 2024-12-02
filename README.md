@@ -11,7 +11,7 @@ HttpGet ve HttpPost,<br/>
 Code First,<br/>
 ORM aracı olarak Entity Framework <br/>
 MSSQL Server <br/>
-LogOut (Çıkış İşlemi) <br/>
+LogOut <br/>
 Authorization (Yetki Verme) gibi bir çok teknoloji mevcuttur.<br/>
 
 #Giriş Sayfası<br/>
