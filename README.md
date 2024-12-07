@@ -3,7 +3,7 @@ Blogu, Yorum Bilgileri, Blog Bilgileri, ve Kullanıcı Yöneticisinin tam yetkil
 Admin tarafında Yeni Blog Ekleme, Blog, Yorum ve İletişim Mesajı Silme,Blog, Yorum için Güncelleme gerçekleştirebildiğimiz (CRUD İşlemleri) mevcuttur.<br/>
 
 UI tarafında Bloglara yorum yapabilme, İletişim kısmından admine mesaj gönderme, rehber kısmında açılır pencere ile sahil tatil köyleri, <br/>
-kamp alanları ve yöresel tarihi yemekler hakkında bilgi alma vardır.<br/>
+kamp alanları ve yöresel tarihi yemekler hakkında bilgilendirme vardır.<br/>
 
 Ayrıca Model-View-Controller katmanları,<br/>
 Doğrulama Kontrolleri,<br/>
