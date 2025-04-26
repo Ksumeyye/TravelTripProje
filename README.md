@@ -5,7 +5,7 @@ Admin tarafında Yeni Blog Ekleme, Blog, Yorum ve İletişim Mesajı Silme, Blog
 UI tarafında Bloglara yorum yapabilme, İletişim kısmından admine mesaj gönderme, rehber kısmında açılır pencere ile sahil tatil köyleri, <br/>
 kamp alanları ve yöresel tarihi yemekler hakkında bilgilendirme vardır.<br/>
 
-Ayrıca Model-View-Controller katmanları,<br/>
+Ayrıca Model-View-Controller mimarisi,<br/>
 Doğrulama Kontrolleri,<br/>
 HttpGet ve HttpPost,<br/>
 Code First,<br/>
