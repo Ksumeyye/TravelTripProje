@@ -1,5 +1,5 @@
 # MVC 5 İLE TATİL & SEYAHAT BLOG SİTESİ PROJESİ <br/>
-Blogu, Yorum Bilgileri, Blog Bilgileri, ve Kullanıcı Yöneticisinin tam yetkili olduğu bu projemde; <br/>
+Blogu,Yorum Bilgileri, Blog Bilgileri, ve Kullanıcı Yöneticisinin tam yetkili olduğu bu projemde; <br/>
 Admin tarafında Yeni Blog Ekleme, Blog, Yorum ve İletişim Mesajı Silme, Blog, Yorum için Güncelleme gerçekleştirebildiğimiz (CRUD İşlemleri) mevcuttur.<br/>
 
 UI tarafında Bloglara yorum yapabilme, İletişim kısmından admine mesaj gönderme, rehber kısmında açılır pencere ile sahil tatil köyleri, <br/>
